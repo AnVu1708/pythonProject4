@@ -655,3 +655,64 @@ margin: -2px 16px}
     border-style: solid;
     border-color: transparent #ffd840 transparent #ffd840 ;
 }
+.home-produpct-pagination {
+    margin:48px 0 32px 0 ;
+}
+.footer {
+    border-top: 4px solid var(--primary-color);
+    padding-top: 12px;
+
+}
+.footer-heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+}
+.footer-items-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+.footer-items-link:hover {
+    color: var(--primary-color);
+}
+.footer-items-icon {
+    font-size: 1.6rem;
+    margin: -1px 8px 0 0;
+}
+.footer__download {
+    display: flex;
+}
+.footer__qr {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--border-color);
+}
+.footer__download-apps {
+    display: flex;
+    height: 100px;
+    margin-left: 16px;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__download-apps-link {
+    text-decoration: none;
+    color: transparent;
+}
+.footer__bottom{
+    padding: 12px 0;
+    margin-top: 40px;
+}
+.footer_text {
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #737373;
+}

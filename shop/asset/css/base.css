@@ -177,6 +177,9 @@ html {
 .pagination-items-active .pagination-item__link{
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+.pagination-items-active .pagination-item__link:hover{
+    background-color: #ed5c3f;
 
 }
 .pagination-item__link{
