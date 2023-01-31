@@ -162,7 +162,7 @@ background-color: #f7f7f7;
     width: 48px;
     object-fit: contain;
 }
-.header-notif-footer-btn { margin: auto;text-decoration: none;padding:8px 0px; color: black;font-size: 1.6rem;font-weight: 400;
+.header-notif-footer-btn { margin: auto;text-decoration: none;padding:8px 0; color: black;font-size: 1.6rem;font-weight: 400;
     text-align: center;
 }
 /*authen modal*/
@@ -542,12 +542,14 @@ display: flex;
     color: var(--primary-color);
 }
 .home-filter__label {
+    display: flex;
+    align-items: center;
     font-size: 1.4rem;
     color: #555;
     margin-right: 16px;
     width: 46.27949%;
     text-decoration: none;
-    height: 10%;
+    height: 70%;
 }
 .home-filter__btn {
     margin-right: 12px;
@@ -594,21 +596,22 @@ display: flex;
     display: block;
     margin-bottom: 5px;
     max-height: 32px;
-    text-overflow: ellipsis;
-    word-break: break-all;
+    overflow: hidden;
     display: -webkit-box;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .product-link-desc {width: 50%;
     text-decoration: none;
     color: rgba(0,0,0,.87);
-    display: block;
     margin:10px 0;
     max-height: 32px;
     text-overflow: ellipsis;
     word-break: break-all;
-    display: -webkit-box;
+    display: -webkit-box!important;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     transform: translateY(34px);
@@ -658,7 +661,7 @@ height: 100%}
 }
 .fa-university {
     font-size: 1.8rem;
-    margin: 0 15px;
+    margin-right:15px;
 }
 .cart-details {
     flex: 1;
@@ -838,10 +841,14 @@ height: 100%}
 }
 .footer__download {
     display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .footer__qr {
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    height: 40%;
     border: 1px solid var(--border-color);
 }
 .footer__download-apps {
@@ -850,10 +857,12 @@ height: 100%}
     margin-left: 16px;
     flex-direction: column;
     justify-content: center;
+
 }
 .footer__download-apps-link {
     text-decoration: none;
     color: transparent;
+    width: 50px;
 }
 .footer__bottom{
     padding: 12px 0;
@@ -865,6 +874,7 @@ height: 100%}
     text-align: center;
     color: #737373;
 }
+
 .number {   outline: none;
     cursor: pointer;
     font-size: .875rem;
@@ -925,4 +935,24 @@ height: 100%}
 }
 .product-final-prices {display: flex;
     align-content: center
+}
+.buy__btn {display: flex;
+    padding: 0;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    height: 4rem;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.cart__footer {width: 100%;
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    color: var(--text-color);
+}
+.home-filter__btn .buy__btn:hover {
+    background-color: #aaaaaa;
+    cursor: pointer;
 }

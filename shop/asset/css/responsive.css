@@ -1,0 +1,71 @@
+/*mobie and table*/
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 60px;
+        --navbar-height: 0px;
+    }
+    .hide-on-mobile-table {
+        display: none;
+    }
+    .header {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        top: 0;
+    }
+    .cart-list {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    width: 100%;
+    padding: 0 calc((100% - 644px)/2);
+    }
+    .cart-list::after {
+        display: none;
+    }
+    .app__container {
+        margin-top: calc(var(--header-height) + var(--header__sort-bar-height))
+    }
+    .detail {
+        left: 184px!important;
+    }
+    .header__sort-bar {
+        display: flex;
+    }
+}
+
+/* table*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-table {
+        display: none;
+    }
+    .header__cart {
+        width: 80px;
+        text-align: right;
+    }
+}
+/*mobie */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .pagination-item {
+        margin: 0;
+
+    }
+    .pagination-item__link {
+        --height: 28px;
+        font-size: 1.6rem;
+        min-width: 36px;
+    }
+    .app__content{
+        margin: 0 4px;
+    }
+    .pagination {
+        align-content: center;
+        padding-left: 0;
+    }
+    .footer__content {
+        padding: 0 16px;
+    }
+}
