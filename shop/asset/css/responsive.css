@@ -16,7 +16,7 @@
     .cart-list {
     position: fixed;
     top: var(--header-height);
-    right: 0;
+    right: 13px;
     width: 100%;
     padding: 0 calc((100% - 644px)/2);
     }
@@ -43,6 +43,13 @@
         width: 80px;
         text-align: right;
     }
+    .cart-list {
+    position: fixed;
+    top: var(--header-height);
+    right: -3%;
+    width: 90%;
+    margin: 0 calc((90% - 644px)/2);
+    }
 }
 /*mobie */
 @media (max-width: 739px) {
@@ -67,5 +74,12 @@
     }
     .footer__content {
         padding: 0 16px;
+    }
+    .cart-list {
+    position: fixed;
+    top: var(--header-height);
+    right: 46%;
+    width: 95%;
+    margin: 0 calc((90% - 644px)/2);
     }
 }
