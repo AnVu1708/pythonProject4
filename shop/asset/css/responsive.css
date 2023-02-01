@@ -32,8 +32,75 @@
     .header__sort-bar {
         display: flex;
     }
+
+    .number{
+        width: 30%;
+        height: 30%;
+    }
+    .input-number {
+        width: 30%;
+        height: 30%;
+        font-size: 1.4rem;
+    }
+    .product-imgs {
+        width: 70%;
+    }
+    .homepage-link {
+        font-size: 1.2rem;
+    }
+     .do{
+	display: flex;
+    	/* margin-left: -1px; */
+    	flex-wrap: wrap;
+    	justify-content: center;
+    	width: 15%;}
+    .product-final-prices {
+	    justify-content: center;
+    display: flex;
+    align-content: center;
+    width: 13.5%;}
+    .product-total {
+	width: 10%;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 16px;}
+    .product-prices {
+	    /* padding: 0 1px; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 14.5%;
+    font-size: 1rem;
+    align-content: center;
+    justify-content: center;
 }
 
+    }
+    .home-product-items__price-current {
+        font-size: 1rem;
+    }
+    .home-product-items__price-old {
+        font-size: 1rem;
+    }
+    .img-desc {
+	    margin-right: 22px;
+    width: 31%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;}
+    .header-logo-img {
+    width: 100px;
+    height: 100px;
+    }
+    .header__titles {
+        font-size: 1.5rem;
+    }
+    .pre-order {
+        font-size: 1rem;
+    }
 /* table*/
 @media (min-width: 740px) and (max-width: 1023px) {
     .hide-on-table {
@@ -50,6 +117,9 @@
     width: 90%;
     margin: 0 calc((90% - 644px)/2);
     }
+    .cart-containers {
+        width: 100%;
+    }
 }
 /*mobie */
 @media (max-width: 739px) {
@@ -58,7 +128,6 @@
     }
     .pagination-item {
         margin: 0;
-
     }
     .pagination-item__link {
         --height: 28px;
@@ -81,5 +150,18 @@
     right: 46%;
     width: 95%;
     margin: 0 calc((90% - 644px)/2);
+    }
+    .detail {
+        left: 124px!important;
+    }
+    .cart-containers {
+        width: 100%;
+}
+/*Low resolution computer*/
+@media  (min-width: 1024px) and (max-width: 1439px) {
+    .grid.wide {
+    width: 784px;
+    margin: 0 auto;
+    max-width: 100%;
     }
 }

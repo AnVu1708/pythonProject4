@@ -165,7 +165,7 @@ background-color: #f7f7f7;
     width: 48px;
     object-fit: contain;
 }
-.header-notif-footer-btn { margin: auto;text-decoration: none;padding:8px 0px; color: black;font-size: 1.6rem;font-weight: 400;
+.header-notif-footer-btn { margin: auto;text-decoration: none;padding:8px 0; color: black;font-size: 1.6rem;font-weight: 400;
     text-align: center;
 }
 /*authen modal*/
